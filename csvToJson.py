@@ -54,7 +54,7 @@ for line in filecontent:
 import simplejson as json
 
 
-with open('file.json', 'w') as file:
+with open('relation.json', 'w') as file:
      file.write(json.dumps(data, indent=4, sort_keys=True))
 
 
