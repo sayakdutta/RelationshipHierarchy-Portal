@@ -51,12 +51,11 @@ for line in filecontent:
 			addChild(tdict, rels[i+1])
 
 
-import json
+import simplejson as json
 
-# as requested in comment
 
 with open('file.json', 'w') as file:
-     file.write(json.dumps(data))
+     file.write(json.dumps(data, indent=4, sort_keys=True))
 
 
 
