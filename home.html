@@ -6,12 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>RELATION HIERARCHY</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css" >
+    <script>
+        function myFunction(){
+            
+            var name = document.getElementById("type").value;
+        var tech = document.getElementById("category").value;
+        var url = "jsontree.html?name=" + encodeURIComponent(name) + "&technology=" + encodeURIComponent(tech);
+        window.location.href = url;
+        }</script>
 	
 </head>
 <body style="background-image: url('Endless-Constellation.svg');">
@@ -28,9 +36,9 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Home</a>
 				</li>
-				<li class="nav-item">
+				<!--<li class="nav-item">
 					<a class="nav-link" href="#">Visualisation</a>
-				</li>
+				</li>-->
 				<li class="nav-item">
 					<a class="nav-link" href="#">Downloads</a>
 				</li>				
@@ -38,7 +46,7 @@
 					<a class="nav-link" href="#">Tuple Data</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Verify Heirarchy</a>
+					<a class="nav-link" href="#">Verify Hierarchy</a>
 				</li>
 			</ul>
 		</div>
@@ -59,12 +67,12 @@
                                 <div class="col-lg-12 mb-4 mb-xl-0 col-xl-6">
                                     <div class="select-wrap">
                                         <span class="icon"><span class="icon-keyboard_arrow_down"></span></span>
-                                        <select onchange = "myFunction2();" class="form-control rounded" style="color: black;" name="" id="type">
-                                            <option value="">WIKIPEDIA</option>
-                                            <option value="">DBPEDIA</option>
-                                            <option value="">WIKIDATA</option>
-                                            <option value="">DBPEDIA WIKIDATA HIERARCHY</option>
-                                            <option value="">DBPEDIA WIKIDATA INFOBOX HIERARCHY</option>
+                                        <select  class="form-control rounded" style="color: black;" name="" id="type">
+                                            <option value="l1">WIKIPEDIA</option>
+                                            <option value="l2">DBPEDIA</option>
+                                            <option value="l3">WIKIDATA</option>
+                                            <option value="l4">DBPEDIA WIKIDATA HIERARCHY</option>
+                                            <option value="l5">DBPEDIA WIKIDATA INFOBOX HIERARCHY</option>
                                         </select>
                                     </div>
                                 </div>
@@ -82,15 +90,16 @@
                             <span class="icon"><span class="icon-keyboard_arrow_down"></span></span>
                             <select class="form-control rounded" style="color: black;" name="" id="category">
 
-                                <option value="">PERSON</option>
-                                <option value="">LOCATION</option>
-                                <option value="">ORGANISATION</option>
-                                <option value="">WHOLE</option>
+                                <option value="m1">PERSON</option>
+                                <option value="m2">LOCATION</option>
+                                <option value="m3">ORGANISATION</option>
+                                <option value="m4">WHOLE</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-lg-12 col-xl-2 ml-auto text-right">
                         <input onclick="myFunction()" type="submit" class="btn btn-primary btn-block rounded" value="Search">
+                             
                     </div>
                 </div>
                 <!-- </form> -->

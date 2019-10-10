@@ -25,8 +25,27 @@
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
+<span id="lblData"></span>
+<script type="text/javascript">
+    var queryString = new Array();
+    window.onload = function () {
+        if (queryString.length == 0) {
+            if (window.location.search.split('?').length > 1) {
+                var params = window.location.search.split('?')[1].split('&');
+                for (var i = 0; i < params.length; i++) {
+                    var key = params[i].split('=')[0];
+                    var value = decodeURIComponent(params[i].split('=')[1]);
+                    queryString[key] = value;
+                }
+            }
+        }
+        /*if (queryString["name"] != null && queryString["technology"] != null) {
+            var data = "<u>Values from QueryString</u><br /><br />";
+            data += "<b>Name:</b> " + queryString["name"] + " <b>Technology:</b> " + queryString["technology"];
+            document.getElementById("lblData").innerHTML = data;
+        }*/
 
+    
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
     width = 1500 - margin.right - margin.left,
     height = 1500 - margin.top - margin.bottom;
@@ -47,7 +66,10 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("https://gist.githubusercontent.com/sayakdutta/8f1eeb362c13a5ad84ab2605074ea888/raw/69bd203dfdf5c3e4bb9f30605982ce8ae0aea7e5/flare.json", function(error, rel) {
+ //var e=document.getElementById('type').value;
+
+ 
+d3.json("https://gist.githubusercontent.com/sayakdutta/eedb7a97dc3b9f68bea00091909514c6/raw/437d6b758ff6de5db7648c622ae4113488d91136/relation.json", function(error, rel) {
   root = rel;
   root.x0 = height / 2;
   root.y0 = 0;
@@ -59,8 +81,14 @@ d3.json("https://gist.githubusercontent.com/sayakdutta/8f1eeb362c13a5ad84ab26050
       d.children = null;
     }
   }
-
+  
   root.children.forEach(collapse);
+  if(queryString["technology"] == "m1")
+  root=(root.children)[0];
+  if(queryString["technology"] == "m2")
+  	root=(root.children)[1];
+   if(queryString["technology"] == "m3")
+  	root=(root.children)[2];
   update(root);
 });
 
@@ -164,6 +192,6 @@ function click(d) {
   }
   update(d);
 }
-
+};
 </script>
 
