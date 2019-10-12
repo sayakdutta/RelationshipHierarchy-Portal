@@ -1,0 +1,1246 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "awardedAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "battleFoughtAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "beatifiedPlace"
+                        },
+                        {
+                            "children": [],
+                            "name": "billedFrom"
+                        },
+                        {
+                            "children": [],
+                            "name": "placeOfBirth"
+                        },
+                        {
+                            "children": [],
+                            "name": "bodyDiscoveredPlcae"
+                        },
+                        {
+                            "children": [],
+                            "name": "canonizedPlace"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "countryOfCitizenship"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "nationality"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "countryForSport"
+                                }
+                            ],
+                            "name": "country"
+                        },
+                        {
+                            "children": [],
+                            "name": "placeOfDeath"
+                        },
+                        {
+                            "children": [],
+                            "name": "honouredAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "locatedAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "majorShrine"
+                        },
+                        {
+                            "children": [],
+                            "name": "missionAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "hometown"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "stateOfOrigin"
+                                }
+                            ],
+                            "name": "state"
+                        },
+                        {
+                            "children": [],
+                            "name": "placeOfBurial"
+                        },
+                        {
+                            "children": [],
+                            "name": "region"
+                        },
+                        {
+                            "children": [],
+                            "name": "residence"
+                        },
+                        {
+                            "children": [],
+                            "name": "restingPlace"
+                        },
+                        {
+                            "children": [],
+                            "name": "significantBuilding"
+                        },
+                        {
+                            "children": [],
+                            "name": "significantProject"
+                        }
+                    ],
+                    "name": "per-loc"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "agency"
+                        },
+                        {
+                            "children": [],
+                            "name": "almaMater"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "band"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "institution"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "prospectLeague"
+                                        }
+                                    ],
+                                    "name": "league"
+                                }
+                            ],
+                            "name": "associatedWith"
+                        },
+                        {
+                            "children": [],
+                            "name": "awardedBy"
+                        },
+                        {
+                            "children": [],
+                            "name": "battleFaughtUnder"
+                        },
+                        {
+                            "children": [],
+                            "name": "boardMemberOf"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "formerCoachOf"
+                                }
+                            ],
+                            "name": "coachOf"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "formerHighSchool"
+                                        }
+                                    ],
+                                    "name": "highSchool"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "college"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "school"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "university"
+                                }
+                            ],
+                            "name": "educatedAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "employer"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "managerOfClub"
+                                }
+                            ],
+                            "name": "managerOf"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "currentMemberOf"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "memberOfPoliticalParty"
+                                }
+                            ],
+                            "name": "memberOf"
+                        },
+                        {
+                            "children": [],
+                            "name": "militaryBranch"
+                        },
+                        {
+                            "children": [],
+                            "name": "militaryUnit"
+                        },
+                        {
+                            "children": [],
+                            "name": "recordLabel"
+                        },
+                        {
+                            "children": [],
+                            "name": "religion"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "coachedTeam"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "debutTeam"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "draftTeam"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "formerTeam"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "nationalTeam"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "prospectTeam"
+                                }
+                            ],
+                            "name": "team"
+                        },
+                        {
+                            "children": [],
+                            "name": "trainedAt"
+                        }
+                    ],
+                    "name": "per-org"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "academicAdvisor"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "doctoralAdvisor"
+                                }
+                            ],
+                            "name": "advisor"
+                        },
+                        {
+                            "children": [],
+                            "name": "appointedBy"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "musicalArtist"
+                                }
+                            ],
+                            "name": "associatedWith"
+                        },
+                        {
+                            "children": [],
+                            "name": "awardedBy"
+                        },
+                        {
+                            "children": [],
+                            "name": "beatifiedBy"
+                        },
+                        {
+                            "children": [],
+                            "name": "canonizedBy"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "formerChoreographer"
+                                }
+                            ],
+                            "name": "choreographer"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "formerCoachOf"
+                                }
+                            ],
+                            "name": "coachOf"
+                        },
+                        {
+                            "children": [],
+                            "name": "employer"
+                        },
+                        {
+                            "children": [],
+                            "name": "influenced"
+                        },
+                        {
+                            "children": [],
+                            "name": "influencedBy"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "inOfficeChancellor"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "deputy"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "inOfficeGovernor"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "inOfficeGovernorGeneral"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "inOfficeLieutenant"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "inOfficeMonarch"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "inOfficePresident"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "inOfficePrimeMinister"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "inOfficeVicePresident"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "inOfficeVicePrimeMinister"
+                                }
+                            ],
+                            "name": "officeholder"
+                        },
+                        {
+                            "children": [],
+                            "name": "opponent"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "currentPartner"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "formerPartner"
+                                }
+                            ],
+                            "name": "partner"
+                        },
+                        {
+                            "children": [],
+                            "name": "predecessor"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "child"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "parent"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "spouse"
+                                }
+                            ],
+                            "name": "relative"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "doctoralStudent"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "notableStudent"
+                                }
+                            ],
+                            "name": "student"
+                        },
+                        {
+                            "children": [],
+                            "name": "successor"
+                        },
+                        {
+                            "children": [],
+                            "name": "trainer"
+                        }
+                    ],
+                    "name": "per-per"
+                }
+            ],
+            "name": "per"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "lieutenancyArea"
+                                        },
+                                        {
+                                            "children": [],
+                                            "name": "principalArea"
+                                        }
+                                    ],
+                                    "name": "area"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "canton"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "ceremonialCounty"
+                                        }
+                                    ],
+                                    "name": "county"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "arrondissement"
+                                        }
+                                    ],
+                                    "name": "department"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "administrativeDistrict"
+                                        }
+                                    ],
+                                    "name": "district"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "frazioni"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "metropolitanBorough"
+                                }
+                            ],
+                            "name": "administrativeDivision"
+                        },
+                        {
+                            "children": [],
+                            "name": "archipelago"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "capitalCity"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "largestCity"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "nearestCity"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "twinTown"
+                                }
+                            ],
+                            "name": "city"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "twinCountry"
+                                }
+                            ],
+                            "name": "country"
+                        },
+                        {
+                            "children": [],
+                            "name": "crosses"
+                        },
+                        {
+                            "children": [],
+                            "name": "hasJunctionWith"
+                        },
+                        {
+                            "children": [],
+                            "name": "highestPlace"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "majorIsland"
+                                }
+                            ],
+                            "name": "island"
+                        },
+                        {
+                            "children": [],
+                            "name": "isPartOf"
+                        },
+                        {
+                            "children": [],
+                            "name": "lake"
+                        },
+                        {
+                            "children": [],
+                            "name": "lakeInflow"
+                        },
+                        {
+                            "children": [],
+                            "name": "lakeOutflow"
+                        },
+                        {
+                            "children": [],
+                            "name": "locatedAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "locatedInArea"
+                        },
+                        {
+                            "children": [],
+                            "name": "lowestPlace"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "lowestMountain"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "mountainRange"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "parentMountainPeak"
+                                }
+                            ],
+                            "name": "mountain"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "municipalAssociations"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "neighboringMunicipality"
+                                }
+                            ],
+                            "name": "municipality"
+                        },
+                        {
+                            "children": [],
+                            "name": "province"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "subregion"
+                                }
+                            ],
+                            "name": "region"
+                        },
+                        {
+                            "children": [],
+                            "name": "river"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "mouthCountry"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "mouthPlace"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "riverMouth"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "mouthRegion"
+                                }
+                            ],
+                            "name": "mouthOfWatercourse"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "sourceCountry"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "sourceMountain"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "sourcePlace"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "sourceRegion"
+                                }
+                            ],
+                            "name": "sourceOfWatercourse"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "routeEnd"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "routeJunction"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "routeStart"
+                                }
+                            ],
+                            "name": "routeLocation"
+                        },
+                        {
+                            "children": [],
+                            "name": "sharesBorderWith"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "federalState"
+                                }
+                            ],
+                            "name": "state"
+                        },
+                        {
+                            "children": [],
+                            "name": "territory"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "leftTributary"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "rightTributary"
+                                }
+                            ],
+                            "name": "tributary"
+                        }
+                    ],
+                    "name": "loc-loc"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "architect"
+                        },
+                        {
+                            "children": [],
+                            "name": "builder"
+                        },
+                        {
+                            "children": [],
+                            "name": "governingBody"
+                        },
+                        {
+                            "children": [],
+                            "name": "maintainedBy"
+                        },
+                        {
+                            "children": [],
+                            "name": "managedBy"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "trainOperator"
+                                }
+                            ],
+                            "name": "operator"
+                        },
+                        {
+                            "children": [],
+                            "name": "owner"
+                        },
+                        {
+                            "children": [],
+                            "name": "leaderParty"
+                        },
+                        {
+                            "children": [],
+                            "name": "tenant"
+                        }
+                    ],
+                    "name": "loc-org"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "architect"
+                        },
+                        {
+                            "children": [],
+                            "name": "builder"
+                        },
+                        {
+                            "children": [],
+                            "name": "designer"
+                        },
+                        {
+                            "children": [],
+                            "name": "discoverer"
+                        },
+                        {
+                            "children": [],
+                            "name": "firstAscentPerson"
+                        },
+                        {
+                            "children": [],
+                            "name": "founder"
+                        },
+                        {
+                            "children": [],
+                            "name": "leader"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "mayor"
+                                }
+                            ],
+                            "name": "officeholder"
+                        },
+                        {
+                            "children": [],
+                            "name": "owner"
+                        },
+                        {
+                            "children": [],
+                            "name": "saint"
+                        }
+                    ],
+                    "name": "loc-per"
+                }
+            ],
+            "name": "loc"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "airlineHub"
+                        },
+                        {
+                            "children": [],
+                            "name": "battleFoughtAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "broadcastArea"
+                        },
+                        {
+                            "children": [],
+                            "name": "campusLocation"
+                        },
+                        {
+                            "children": [],
+                            "name": "city"
+                        },
+                        {
+                            "children": [],
+                            "name": "country"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "county"
+                                }
+                            ],
+                            "name": "administrativeDivision"
+                        },
+                        {
+                            "children": [],
+                            "name": "foundingLocation"
+                        },
+                        {
+                            "children": [],
+                            "name": "garrison"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "homeArena"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "homeStadium"
+                                }
+                            ],
+                            "name": "ground"
+                        },
+                        {
+                            "children": [],
+                            "name": "headquarter"
+                        },
+                        {
+                            "children": [],
+                            "name": "jurisdiction"
+                        },
+                        {
+                            "children": [],
+                            "name": "localAuthority"
+                        },
+                        {
+                            "children": [],
+                            "name": "locatedAt"
+                        },
+                        {
+                            "children": [],
+                            "name": "region"
+                        },
+                        {
+                            "children": [],
+                            "name": "regionServed"
+                        },
+                        {
+                            "children": [],
+                            "name": "state"
+                        },
+                        {
+                            "children": [],
+                            "name": "targetAirport"
+                        }
+                    ],
+                    "name": "org-loc"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "athleticsAffiliation"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "europeanAffiliation"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "internationalAffiliation"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "nationalAffiliation"
+                                }
+                            ],
+                            "name": "affiliation"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "band"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "league"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "university"
+                                }
+                            ],
+                            "name": "associatedWith"
+                        },
+                        {
+                            "children": [],
+                            "name": "authority"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "formerBroadcastNetwork"
+                                }
+                            ],
+                            "name": "broadcastNetwork"
+                        },
+                        {
+                            "children": [],
+                            "name": "commandStructure"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "distributingCompany"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "owningCompany"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "parentCompany"
+                                }
+                            ],
+                            "name": "company"
+                        },
+                        {
+                            "children": [],
+                            "name": "distributingLabel"
+                        },
+                        {
+                            "children": [],
+                            "name": "division"
+                        },
+                        {
+                            "children": [],
+                            "name": "isPartOf"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "house"
+                                }
+                            ],
+                            "name": "legislativeBody"
+                        },
+                        {
+                            "children": [],
+                            "name": "localAuthority"
+                        },
+                        {
+                            "children": [],
+                            "name": "makesProductFor"
+                        },
+                        {
+                            "children": [],
+                            "name": "mergedIntoParty"
+                        },
+                        {
+                            "children": [],
+                            "name": "militaryBranch"
+                        },
+                        {
+                            "children": [],
+                            "name": "operator"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "childOrganization"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "foundingOrganization"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "parentOrganization"
+                                }
+                            ],
+                            "name": "organization"
+                        },
+                        {
+                            "children": [],
+                            "name": "owner"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "politicalPartyInLegislature"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "politicalPartyOfLeader"
+                                }
+                            ],
+                            "name": "politicalParty"
+                        },
+                        {
+                            "children": [],
+                            "name": "predecessor"
+                        },
+                        {
+                            "children": [],
+                            "name": "recordLabel"
+                        },
+                        {
+                            "children": [],
+                            "name": "religion"
+                        },
+                        {
+                            "children": [],
+                            "name": "rival"
+                        },
+                        {
+                            "children": [],
+                            "name": "splitFromParty"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "sisterStation"
+                                }
+                            ],
+                            "name": "subsidiary"
+                        },
+                        {
+                            "children": [],
+                            "name": "successor"
+                        }
+                    ],
+                    "name": "org-org"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "name": "alumni"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "musicalArtist"
+                                }
+                            ],
+                            "name": "associatedWith"
+                        },
+                        {
+                            "children": [],
+                            "name": "chairperson"
+                        },
+                        {
+                            "children": [],
+                            "name": "coach"
+                        },
+                        {
+                            "children": [],
+                            "name": "director"
+                        },
+                        {
+                            "children": [],
+                            "name": "founder"
+                        },
+                        {
+                            "children": [],
+                            "name": "head"
+                        },
+                        {
+                            "children": [],
+                            "name": "influencedBy"
+                        },
+                        {
+                            "children": [],
+                            "name": "leader"
+                        },
+                        {
+                            "children": [],
+                            "name": "manager"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "formerBandMember"
+                                        }
+                                    ],
+                                    "name": "bandMember"
+                                }
+                            ],
+                            "name": "member"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "chairman"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "chancellor"
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "children": [],
+                                            "name": "notableCommander"
+                                        },
+                                        {
+                                            "children": [],
+                                            "name": "secondCommander"
+                                        }
+                                    ],
+                                    "name": "commander"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "dean"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "president"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "secretaryGeneral"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "viceChancellor"
+                                }
+                            ],
+                            "name": "officeholder"
+                        },
+                        {
+                            "children": [],
+                            "name": "owner"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "schoolPatron"
+                                }
+                            ],
+                            "name": "patron"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "keyPeople"
+                                }
+                            ],
+                            "name": "people"
+                        },
+                        {
+                            "children": [],
+                            "name": "rector"
+                        }
+                    ],
+                    "name": "org-per"
+                }
+            ],
+            "name": "org"
+        }
+    ],
+    "name": "rel"
+}
