@@ -68,7 +68,7 @@ var svg = d3.select("body").append("svg")
 
  //var e=document.getElementById('type').value;
 
- 
+ if(queryString["name"]=="l1"){
 d3.json("https://gist.githubusercontent.com/sayakdutta/eedb7a97dc3b9f68bea00091909514c6/raw/437d6b758ff6de5db7648c622ae4113488d91136/relation.json", function(error, rel) {
   root = rel;
   root.x0 = height / 2;
@@ -90,8 +90,99 @@ d3.json("https://gist.githubusercontent.com/sayakdutta/eedb7a97dc3b9f68bea000919
    if(queryString["technology"] == "m3")
   	root=(root.children)[2];
   update(root);
-});
+});}
+if(queryString["name"]=="l2"){
+d3.json("https://gist.githubusercontent.com/sayakdutta/babea6b6b65a625c42801de5c3a967fa/raw/27cae4256de72c1728ebb706dfe6e158a95630e9/db.json", function(error, rel) {
+  root = rel;
+  root.x0 = height / 2;
+  root.y0 = 0;
 
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+  
+  root.children.forEach(collapse);
+  if(queryString["technology"] == "m1")
+  root=(root.children)[0];
+  if(queryString["technology"] == "m2")
+  	root=(root.children)[1];
+   if(queryString["technology"] == "m3")
+  	root=(root.children)[2];
+  update(root);
+});}
+if(queryString["name"]=="l3"){
+d3.json("https://gist.githubusercontent.com/sayakdutta/be09c68a2f39639dbacf9b145bd5309e/raw/a951573e34829d96190d0f805777b484ae8896b3/wd.json", function(error, rel) {
+  root = rel;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+  
+  root.children.forEach(collapse);
+  if(queryString["technology"] == "m1")
+  root=(root.children)[0];
+  if(queryString["technology"] == "m2")
+  	root=(root.children)[1];
+   if(queryString["technology"] == "m3")
+  	root=(root.children)[2];
+  update(root);
+});}
+if(queryString["name"]=="l4"){
+d3.json("https://gist.githubusercontent.com/sayakdutta/fcb261960b64d76058e3f666027409ac/raw/c292a9c998f4c9b29b3303abde64753c054bd7c6/in.json", function(error, rel) {
+  root = rel;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+  
+  root.children.forEach(collapse);
+  if(queryString["technology"] == "m1")
+  root=(root.children)[0];
+  if(queryString["technology"] == "m2")
+  	root=(root.children)[1];
+   if(queryString["technology"] == "m3")
+  	root=(root.children)[2];
+  update(root);
+});}
+if(queryString["name"]=="l5"){
+d3.json("https://gist.githubusercontent.com/sayakdutta/fcb261960b64d76058e3f666027409ac/raw/c292a9c998f4c9b29b3303abde64753c054bd7c6/in.json", function(error, rel) {
+  root = rel;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+  
+  root.children.forEach(collapse);
+  if(queryString["technology"] == "m1")
+  root=(root.children)[0];
+  if(queryString["technology"] == "m2")
+  	root=(root.children)[1];
+   if(queryString["technology"] == "m3")
+  	root=(root.children)[2];
+  update(root);
+});}
 d3.select(self.frameElement).style("height", "800px");
 
 function update(source) {
