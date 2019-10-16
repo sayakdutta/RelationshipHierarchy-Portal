@@ -188,7 +188,9 @@ hr.light-100 {
   }
 }
 
-
+body {
+  height: 100%;
+}
 /*---Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
@@ -256,4 +258,36 @@ footer {
 
 .search-container {
   margin-top: 200px;
+}
+
+
+.table-white {
+  color: white;
+}
+
+.table-center{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   width: 60%;
+  height: 80%; 
+  /*text-align: center;*/
+  /*padding-top: 30px;*/
+}
+
+
+
+.table-center h2 {
+  margin-bottom: 40px;
+}
+
+tbody a {
+  color: white;
+  text-decoration: none;
+}
+
+tbody a:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
 }
