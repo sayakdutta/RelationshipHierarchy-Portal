@@ -4,7 +4,7 @@ An Interactive website  that  displays different downloadable hierarchy levels
 ### Installation
 
 ```sh
-$  pip install django
+$ pip install django
 $ pip install --upgrade django-crispy-forms
 ```
 
