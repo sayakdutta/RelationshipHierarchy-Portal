@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RELATION HIERARCHY</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'core/style.css' %}" >
+	{% block js %}
+{% endblock %}
+    
+	
+</head>
+<body style="background-image: url({% static 'core/Endless-Constellation.svg' %});">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<div class="container-fluid">
+		<a href="" class="navbar-brand" href="#"><!-- <img src="" alt="RELATION HIERARCHY"> -->RELATION HIERARCHY</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item {% if activate == 'home' %} active {% endif %}">
+					<a class="nav-link" href="{% url 'core:home' %}">Home</a>
+				</li>
+				<!--<li class="nav-item">
+					<a class="nav-link" href="#">Visualisation</a>
+				</li>-->
+				<li class="nav-item{% if activate == 'downloads' %} active {% endif %}">
+					<a class="nav-link" href="{% url 'core:download' %}">Downloads</a>
+				</li>				
+				<li class="nav-item{% if activate == 'tuple' %} active {% endif %}">
+					<a class="nav-link" href="#">Tuple Data</a>
+				</li>
+				<li class="nav-item{% if activate == 'verheir' %} active {% endif %}">
+					<a class="nav-link" href="#">Verify Hierarchy</a>
+				</li>
+				<li class="nav-item {% if activate == 'login' %} active {% endif %}">
+					{% if user.is_authenticated %}
+					<a class="nav-link" href="{% url 'auths:logout' %}">Logout</a>
+					{% else %}
+					<a class="nav-link" href="{% url 'auths:login' %}">Login</a>
+					{% endif %}
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+{% block body %}
+{% endblock %}
+
+
+<!-- <footer id="footer" class="footer-1">
+
+  
+<div class="footer-copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<p class="copyright">Copyright © 2019. All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</footer> -->
+
+
+
+</body>
+</html>
