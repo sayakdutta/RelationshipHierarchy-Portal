@@ -46,9 +46,12 @@
         }*/
 
     
-var margin = {top: 20, right: 120, bottom: 20, left: 120},
+var margin = {top: 20, right: 120, bottom: 20, left: 120};
     width = 1500 - margin.right - margin.left,
     height = 1500 - margin.top - margin.bottom;
+    // size of the diagram
+   //var width = document.width();
+    //var height = $(document).height();
     
 var i = 0,
     duration = 750,
@@ -206,7 +209,7 @@ function update(source) {
 
   nodeEnter.append("circle")
       .attr("r", 1e-6)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+      .style("fill", function(d) { return d3.set(d._children).size() ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
@@ -222,7 +225,7 @@ function update(source) {
 
   nodeUpdate.select("circle")
       .attr("r", 4.5)
-      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+      .style("fill", function(d) { return d3.set(d._children).size() ? "lightsteelblue" : "#fff"; });
 
   nodeUpdate.select("text")
       .style("fill-opacity", 1);
