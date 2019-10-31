@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block js %}
     
@@ -22,27 +23,27 @@
       <tr>
         <td>1</td>
         <td>Wikipedia</td>
-        <td><a href="relation.csv" download>relation.csv</a></td>
+        <td><a href="{% static 'core/csv_download/relation.csv' %}" download>relation.csv</a></td>
       </tr>
       <tr>
         <td>2</td>
         <td>DBPEDIA</td>
-        <td><a href="db.csv" download>relation.csv</a></td>
+        <td><a href="{% static 'core/csv_download/db_v1.1.csv' %}" download>relation.csv</a></td>
       </tr>
       <tr>
         <td>3</td>
         <td>WIKIDATA</td>
-        <td><a href="wd.csv" download>relation.csv</a></td>
+        <td><a href="{% static 'core/csv_download/wd_v1.1.csv' %}" download>relation.csv</a></td>
       </tr>
       <tr>
-        <td>3</td>
+        <td>4</td>
         <td>DBPEDIA WIKIDATA HIERARCHY</td>
-        <td><a href="in.csv" download>relation.csv</a></td>
+        <td><a href="{% static 'core/csv_download/in_v1.1.csv' %}" download>relation.csv</a></td>
       </tr>
       <tr>
-        <td>3</td>
+        <td>5</td>
         <td>DBPEDIA WIKIDATA INFOBOX HIERARCHY</td>
-        <td><a href="in.csv" download>relation.csv</a></td>
+        <td><a href="{% static 'core/csv_download/in_v1.1.csv' %}" download>relation.csv</a></td>
       </tr>
     </tbody>
   </table>
