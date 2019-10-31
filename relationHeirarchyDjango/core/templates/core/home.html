@@ -94,7 +94,7 @@
             
             var name = document.getElementById("type").value;
         var tech = document.getElementById("category").value;
-        var url = "jsontree.html?name=" + encodeURIComponent(name) + "&technology=" + encodeURIComponent(tech);
+        var url = "{% url 'core:heirarchy' %}?name=" + encodeURIComponent(name) + "&technology=" + encodeURIComponent(tech);
         window.location.href = url;
         }
 
