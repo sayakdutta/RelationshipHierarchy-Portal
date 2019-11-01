@@ -4,15 +4,15 @@ An Interactive website  that  displays different downloadable hierarchy levels
 ### Installation
 
 ```sh
-$ pip install django
-$ pip install --upgrade django-crispy-forms
+$ pip3 install django
+$ pip3 install --upgrade django-crispy-forms
 ```
 
 Make migrations and start the server.
 ```sh
-$ python manage.py makemigrations
-$ python manage.py migrate
-$ python manage.py runserver
+$ python3 manage.py makemigrations
+$ python3 manage.py migrate
+$ python3 manage.py runserver
 ```
 
 ## Tree visualization procedure
