@@ -21,10 +21,22 @@
   stroke: #ccc;
   stroke-width: 1.5px;
 }
-
+#yes {
+    width: 80px;
+    height: 40px;
+    background-color: lightsteelblue;
+}
+#no {
+    width: 80px;
+    height: 40px;
+    background-color: lightsteelblue;
+}
 </style>
 <body>
+	<button id="yes">Expand All</button>
+	<button id="no">Collapse</button>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <span id="lblData"></span>
 <script type="text/javascript">
     var queryString = new Array();
@@ -46,9 +58,11 @@
         }*/
 
     
-var margin = {top: 20, right: 120, bottom: 20, left: 120};
-    width = 1500 - margin.right - margin.left,
+var margin = {top: 20, right: 120, bottom: 20, left: 120},
+    width = 4500 - margin.right - margin.left,
     height = 1500 - margin.top - margin.bottom;
+    //width=$(document).width()*2;
+    //height=$(document).height()*2;
     // size of the diagram
    //var width = document.width();
     //var height = $(document).height();
@@ -70,22 +84,30 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
  //var e=document.getElementById('type').value;
-
- if(queryString["name"]=="l1"){
-d3.json("https://gist.githubusercontent.com/sayakdutta/eedb7a97dc3b9f68bea00091909514c6/raw/437d6b758ff6de5db7648c622ae4113488d91136/relation.json", function(error, rel) {
-  root = rel;
-  root.x0 = height / 2;
-  root.y0 = 0;
-
-  function collapse(d) {
+ function collapse(d) {
     if (d.children) {
       d._children = d.children;
       d._children.forEach(collapse);
       d.children = null;
     }
   }
+  function notcollapse(d) {
+    if (d._children) {
+      d.children = d._children;
+      d.children.forEach(notcollapse);
+      d._children = null;
+    }
+  }
+ if(queryString["name"]=="l1"){
+d3.json("https://gist.githubusercontent.com/sayakdutta/eedb7a97dc3b9f68bea00091909514c6/raw/437d6b758ff6de5db7648c622ae4113488d91136/relation.json", function(error, rel) {
+  root = rel;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
   
-  root.children.forEach(collapse);
+   root.children.forEach(collapse);
+  	//document.getElementById("yes").onclick=function(){d.children.forEach(notcollapse);};
+  	//document.getElementById("no").onclick=function(){d.children.forEach(collapse)};
   if(queryString["technology"] == "m1")
   root=(root.children)[0];
   if(queryString["technology"] == "m2")
@@ -176,7 +198,6 @@ d3.json("https://gist.githubusercontent.com/sayakdutta/fcb261960b64d76058e3f6660
       d.children = null;
     }
   }
-  
   root.children.forEach(collapse);
   if(queryString["technology"] == "m1")
   root=(root.children)[0];
@@ -195,14 +216,17 @@ function update(source) {
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 180; });
+  nodes.forEach(function(d) { d.y = d.depth * 580; });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
       .data(nodes, function(d) { return d.id || (d.id = ++i); });
-
+/*var nodeEnter=node.enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", click1);*/
   // Enter any new nodes at the parent's previous position.
-  var nodeEnter = node.enter().append("g")
+   var nodeEnter = node.enter().append("g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
       .on("click", click);
@@ -279,12 +303,27 @@ function update(source) {
 function click(d) {
   if (d.children) {
     d._children = d.children;
-    d.children = null;
+    //document.getElementById("yes").onclick=function(){d.children.forEach(notcollapse);};
+    d.children=null;
+    width-=1000;
+    height-=1000;
   } else {
     d.children = d._children;
-    d._children = null;
-  }
-  update(d);
+    document.getElementById("yes").onclick=function(){d.children.forEach(notcollapse);};
+    document.getElementById("no").onclick=function(){d.children.forEach(collapse);};
+    d._children=null;
+    height+=1000;
+    width+=1000;}
+//document.getElementById("yes").onclick=function(){d.children.forEach(notcollapse)};}
+
+ /*svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");*/
+
+
+update(d);
 }
 };
 </script>
