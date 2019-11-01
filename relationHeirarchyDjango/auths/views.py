@@ -23,14 +23,5 @@ def register(request):
 		return render(request, 'auths/signup.html')
 
 
-# def login2(request):
-# 	if request.method == 'POST':
-# 		form = UserCreationForm(request.POST)
-# 		username = request.POST['username']
-# 		password = request.POST['password']
-# 		user = User.objects.get(username=username)
-# 		if user is not None:
-# 			login(request, user)
-# 			return redirect('core:home')
-# 	return render(request, 'auths/login.html')
+
 	

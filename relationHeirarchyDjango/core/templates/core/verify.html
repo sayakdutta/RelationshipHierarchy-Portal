@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block body %}
+<form id="myForm"  method="POST" action="{% url 'core:verify' %}" >
+		{% csrf_token %}
+<div class="light container table-white table-center">
+<table class="table">
+    <thead>
+	<tr>
+		<th>
+			Parent
+		</th>
+		<th>
+			Child
+		</th>
+		<th>
+			Yes/NO
+		</th>		
+	</tr>
+</thead>
+<tbody>
+	
+	{% for tuple in tuples %}
+	<tr>
+		<td>
+			{{tuple.parent}}
+		</td>
+		<td>
+			{{tuple.child}}
+			
+		</td>
+		<td>
+			<input type="radio" name="choice{{tuple.id}}" value="Yes"> Yes &nbsp;
+			<input type="radio" name="choice{{tuple.id}}" value="No"> No
+		</td>		
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+	
+	<button class="btn btn-primary" onclick="myfunc()" type="button">Submit</button>
+</div>
+	</form>
+
+{% endblock %}
+
+{% block js %}
+	<script>
+		function myfunc(){
+
+		// document.querySelector("button").disable();
+		let rads = document.querySelectorAll("input");
+		console.log(rads);
+		let f=0;
+		for (let i=1; i<rads.length;i+=2){
+			if ((!rads[i].checked)&&(!rads[i+1].checked)){
+				alert("Fill All Fields");
+				f=-1;
+				break;
+
+			}
+		}
+		if(f==0)
+		document.getElementById("myForm").submit();
+}
+	</script>
+{% endblock %}

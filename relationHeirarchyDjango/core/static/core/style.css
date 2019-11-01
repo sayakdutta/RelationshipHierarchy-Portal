@@ -307,3 +307,7 @@ tbody a:hover {
   border-radius: 5px;
   border: none;
 }
+
+button {
+  cursor: pointer;
+}
