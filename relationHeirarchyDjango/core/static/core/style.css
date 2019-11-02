@@ -41,6 +41,9 @@ html, body {
 .btn-primary {
   background-color: #6648b1;
   border: 1px solid #6648b1;
+  position:relative;
+  left:30 px;
+  top:15 px;
 }
 .btn-primary:hover {
   background-color: #563d7c;
