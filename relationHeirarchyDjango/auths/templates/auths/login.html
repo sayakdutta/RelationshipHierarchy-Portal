@@ -107,7 +107,7 @@
  
   <div class="login-page">
   <div class="form">
-    <form class="login-form" method="post" action="{% url 'auths:login' %}">
+    <form class="login-form" method="post">
         {% csrf_token %}
       <input type="text" name="username" placeholder="Username"/>
       <input type="password" name="password" placeholder="Password"/>
