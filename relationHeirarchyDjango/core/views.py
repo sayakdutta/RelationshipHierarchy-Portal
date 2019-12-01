@@ -3,6 +3,7 @@ import os
 from django.conf import settings
 from .models import *
 from django.contrib.auth.decorators import login_required
+from django.db.models import F, Sum
 
 # def temp(request):
 
@@ -18,10 +19,30 @@ from django.contrib.auth.decorators import login_required
 
 # 	return render(request,'core/download.html')
 
+# def init_copy():
+# 	tuples = Tuple.objects.all().order_by('sump')
+# 	for i in range(1,len(tuples)+1):
+# 		TupleCopy.objects.create(id=i, parent=tuples[i-1].parent, child=tuples[i-1].child, sump=tuples[i-1].pos+tuples[i-1].neg)
+
+# 	print("DONE", "XXXXXXXXXXXXXXx")
+
+# def getKTuples(k):
+# 	startIndex = RangeIndex.objects.all()[0]
+# 	tuples = TupleCopy.objects.all()[startIndex:startIndex+k]
+
+# 	return tuples
+
+# def addMore(start, end):
+# 	tuples = Tuple.objects.all().order_by('sump')
+# 	for i in range(1,len(tuples)+1):
+# 		TupleCopy.objects.create(id=i, parent=tuples[i-1].parent, child=tuples[i-1].child, sump=tuples[i-1].pos+tuples[i-1].neg)
+
+# 	print("DONE", "XXXXXXXXXXXXXXx")
+
 @login_required
 def verify(request):
 	if request.method == 'POST':
-		
+		pk=0
 		for key in request.POST:
 			if key != 'csrfmiddlewaretoken':
 				pk = int(key[6:])
@@ -32,10 +53,14 @@ def verify(request):
 					tupl.neg += 1
 				tupl.save()
 				print(pk, request.POST[key])
+		startIndex = RangeIndex.objects.all()[0]
+		startIndex.startIndex = pk+1
+		startIndex.save()
 
-		return redirect('core:home')
+		return redirect('core:verify')
 	else:
-		tuples = Tuple.objects.all()[:10]
+		# tuples = getKTuples(10)
+		tuples = Tuple.objects.all().annotate(total_votes=Sum(F('pos') + F('neg'))).order_by('total_votes')[:10]
 
 		context = {
 			'activate': 'verheir',
