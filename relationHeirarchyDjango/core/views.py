@@ -51,16 +51,22 @@ def verify(request):
 					tupl.pos += 1 
 				elif request.POST[key] == "No":
 					tupl.neg += 1
+				tupl.sump += 1
+				request.user.pairs.tuples.remove(tupl)
+
 				tupl.save()
 				print(pk, request.POST[key])
-		startIndex = RangeIndex.objects.all()[0]
-		startIndex.startIndex = pk+1
-		startIndex.save()
+		request.user.pairs.verifyNumber += 10
+		request.user.pairs.save()
+		# startIndex = RangeIndex.objects.all()[0]
+		# startIndex.startIndex = pk+1
+		# startIndex.save()
 
 		return redirect('core:verify')
 	else:
 		# tuples = getKTuples(10)
-		tuples = Tuple.objects.all().annotate(total_votes=Sum(F('pos') + F('neg'))).order_by('total_votes')[:10]
+		tuples = request.user.pairs.tuples.order_by('sump')[:10]
+		# tuples = Tuple.objects.all().annotate(total_votes=Sum(F('pos') + F('neg'))).order_by('total_votes')[:10]
 
 		context = {
 			'activate': 'verheir',
